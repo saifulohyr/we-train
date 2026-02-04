@@ -28,6 +28,7 @@
         "SESSION_DRIVER": "cookie",
         "LOG_CHANNEL": "stderr",
         "DB_CONNECTION": "sqlite",
-        "DB_DATABASE": ":memory:"
+        "DB_DATABASE": ":memory:",
+        "APP_KEY": "base64:Sl8CwskE80BChGfYZ7u+S58l2Lx1vkdcr9JfXTkpmVU="
     }
 }
