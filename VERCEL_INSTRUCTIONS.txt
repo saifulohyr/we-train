@@ -1,0 +1,28 @@
+SOLUSI ERROR 500 VERCEL
+=======================
+
+Penyebab Error:
+Website Laravel error 500 saat ini karena "APP_KEY" belum disetting di Vercel. Laravel mewajibkan key ini untuk keamanan.
+
+LANGKAH PERBAIKAN:
+
+1. Copy Key ini:
+   base64:Sl8CwskE80BChGfYZ7u+S58l2Lx1vkdcr9JfXTkpmVU=
+
+2. Buka Dashboard Vercel:
+   - Pilih Project "we-train"
+   - Klik menu "Settings" (di bagian atas)
+   - Klik menu "Environment Variables" (di sidebar kiri)
+
+3. Tambahkan Variable Baru:
+   - Key: APP_KEY
+   - Value: (Paste kode base64 di atas)
+   - Klik tombol "Save"
+
+4. REDEPLOY (Wajib!):
+   - Klik tab "Deployments" (di bagian atas)
+   - Lihat deployment paling atas (statusnya mungkin Error atau Ready).
+   - Klik titik tiga (...) di sebelah kanannya.
+   - Klik "Redeploy".
+
+5. Tunggu sampai selesai, lalu buka websitenya.
