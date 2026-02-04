@@ -6,10 +6,11 @@
         { "src": "/public/**", "use": "@vercel/static" }
     ],
     "routes": [
-        {
-            "src": "/(build|assets|css|js|images|storage|.*\\.png|.*\\.jpg|.*\\.ico|.*\\.svg)",
-            "dest": "/public/$0"
-        },
+        { "src": "/build/(.*)", "dest": "/public/build/$1" },
+        { "src": "/assets/(.*)", "dest": "/public/assets/$1" },
+        { "src": "/storage/(.*)", "dest": "/public/storage/$1" },
+        { "src": "/favicon.ico", "dest": "/public/favicon.ico" },
+        { "src": "/robots.txt", "dest": "/public/robots.txt" },
         {
             "src": "/(.*)",
             "dest": "/api/index.php"
